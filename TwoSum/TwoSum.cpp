@@ -17,5 +17,6 @@ public:
 
             seen[nums[i]] = i; // Add current number to the hashmap / we've seen the current number
         }
+        return {};
     }
 };
