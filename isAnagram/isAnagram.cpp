@@ -1,6 +1,11 @@
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+#include <string>
+
 class Solution {
 public:
-    bool isAnagram(string s, string t) {
+    bool isAnagram(std::string s, std::string t) {
 
         if (s.length() != t.length()){
             return false;
