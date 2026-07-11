@@ -12,9 +12,9 @@ public:
                 freqs[c - 'a']++; // Create the freqeuency map
             }
 
-            std::string key = to_string(freqs[0]);
+            std::string key = std::to_string(freqs[0]);
             for (int i = 1; i < 26; i++){
-                key += ',' + to_string(freqs[i]); // Create a unique key for the frequency map
+                key += ',' + std::to_string(freqs[i]); // Create a unique key for the frequency map
             }
 
             res[key].push_back(s);
